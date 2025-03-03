@@ -29,7 +29,7 @@ public class SettingsLanguageController: NSViewController {
     /// 图标视图
     private let iconImageView: NSImageView = {
         let imageView = NSImageView()
-        imageView.image = NSImage(named: "freeapp1")
+        imageView.image = NSApplication.shared.applicationIconImage
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.widthAnchor.constraint(equalToConstant: 80).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
