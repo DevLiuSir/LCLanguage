@@ -1,0 +1,10 @@
+//
+//  LCLanguage.strings
+//
+//  Created by DevLiuSir on 2023/3/2.
+//
+
+"button_cancel.title" = "Annuler";
+"label_language_change.messageText" = "Langue modifiée. Redémarrer maintenant ?";
+"label_language_change.informativeText" = "Redémarrage requis pour la nouvelle langue.";
+"button_restart.title" = "Redémarrer";

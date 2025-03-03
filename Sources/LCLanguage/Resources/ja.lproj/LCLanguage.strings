@@ -1,0 +1,10 @@
+//
+//  LCLanguage.strings
+//
+//  Created by DevLiuSir on 2023/3/2.
+//
+
+"button_cancel.title" = "キャンセル";
+"label_language_change.messageText" = "アプリの主言語が変更されました。 今すぐアプリケーションを再起動しますか? ";
+"label_language_change.informativeText" = "アプリケーションが再起動されるまで、アプリケーションは新しい言語を使用できない可能性があります。";
+"button_restart.title" = "今すぐ再起動";

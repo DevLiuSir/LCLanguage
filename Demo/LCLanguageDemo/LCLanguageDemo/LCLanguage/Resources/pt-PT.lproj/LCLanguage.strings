@@ -1,0 +1,10 @@
+//
+//  LCLanguage.strings
+//
+//  Created by DevLiuSir on 2023/3/2.
+//
+
+"button_cancel.title" = "Cancelar";
+"label_language_change.messageText" = "Idioma alterado. Reiniciar agora?";
+"label_language_change.informativeText" = "Reinicie para aplicar o novo idioma.";
+"button_restart.title" = "Reiniciar";
