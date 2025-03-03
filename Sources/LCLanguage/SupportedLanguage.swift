@@ -8,8 +8,8 @@ import Foundation
 
 
 public struct Language: Hashable {
-    let name: String    // 名称
-    let code: String    // code代码
+    public let name: String    // 名称
+    public let code: String    // code代码
 }
 
 /// 支持语言

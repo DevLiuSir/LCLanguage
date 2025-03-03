@@ -26,7 +26,7 @@ public func localizeString(_ key: String) -> String {
 public class LCLanguage {
     
     /// 当前语言
-    static let currentLang = LanguageManager.sharedManager.currentLang
+    public static let currentLang = LanguageManager.sharedManager.currentLang
     
     /// 视图模型，支持的语言列表
     public static let supportedLanguagesModel = SupportedLanguages.langList
