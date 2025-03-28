@@ -710,15 +710,15 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Icd-qy-nw5">
-                                <rect key="frame" x="47" y="121" width="116" height="25"/>
+                                <rect key="frame" x="183" y="121" width="116" height="25"/>
                                 <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="Bga-Em-6aZ">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="message"/>
                                     <menu key="menu" id="9Zx-CN-mNr"/>
                                 </popUpButtonCell>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="109" id="7ki-7B-vp8"/>
-                                    <constraint firstAttribute="height" constant="20" id="KZV-PL-aAg"/>
+                                    <constraint firstAttribute="width" constant="109" id="2Wf-E8-w27"/>
+                                    <constraint firstAttribute="height" constant="20" id="2oR-ug-dUG"/>
                                 </constraints>
                                 <connections>
                                     <action selector="chooseCurrentLocale:" target="XfG-lQ-9wD" id="GhN-o4-tlr"/>
@@ -726,8 +726,8 @@
                             </popUpButton>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Icd-qy-nw5" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="50" id="NKA-tq-2z0"/>
-                            <constraint firstItem="Icd-qy-nw5" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="Szh-N2-h3Z"/>
+                            <constraint firstItem="Icd-qy-nw5" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="bWy-3e-pzw"/>
+                            <constraint firstItem="Icd-qy-nw5" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="qB1-p4-dj9"/>
                         </constraints>
                     </view>
                     <connections>
