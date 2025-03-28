@@ -13,7 +13,6 @@ class LanguageManager {
     /// 单列模式
     static let sharedManager = LanguageManager()
     
-    
     /// 系统优先级
     var systemLangPriority: Bool {
         get {
@@ -22,7 +21,7 @@ class LanguageManager {
         set {
             UserDefaults.standard.set(newValue, forKey: UserDefaults.Key.systemLangPriority)
             UserDefaults.standard.synchronize()
-            print("systemLangPriority:\(newValue)")
+            //print("systemLangPriority:\(newValue)")
         }
     }
     
@@ -30,7 +29,6 @@ class LanguageManager {
     var currentLang: String {
         didSet {
             Bundle.setLanguage(lang: currentLang)
-            NotificationCenter.default.post(name: .changeSettings, object: nil)
         }
     }
     
@@ -38,16 +36,6 @@ class LanguageManager {
     init() {
         let _systemLangPriority = UserDefaults.standard.bool(forKey: UserDefaults.Key.systemLangPriority)
         currentLang = _systemLangPriority ? Bundle.systemLanguage() : Bundle.currentLanguage()
-        
-        // 监听 显示popver 的通知
-        NotificationCenter.default.addObserver(self, selector: #selector(didBecomeActiveNotification(_:)), name: .showPopover, object: nil)
-    }
-    
-    /// 已成为活动通知
-    @objc private func didBecomeActiveNotification(_ noti:Notification) {
-        if systemLangPriority {
-            self.currentLang = Bundle.systemLanguage()
-        }
     }
     
     
@@ -75,4 +63,3 @@ class LanguageManager {
     }
     
 }
-
