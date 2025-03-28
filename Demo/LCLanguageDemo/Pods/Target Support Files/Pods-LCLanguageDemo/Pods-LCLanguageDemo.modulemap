@@ -1,0 +1,6 @@
+module Pods_LCLanguageDemo {
+  umbrella header "Pods-LCLanguageDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

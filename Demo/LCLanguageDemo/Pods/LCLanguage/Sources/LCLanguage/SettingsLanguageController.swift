@@ -29,13 +29,12 @@ public class SettingsLanguageController: NSViewController {
     /// 图标视图
     private let iconImageView: NSImageView = {
         let imageView = NSImageView()
-        imageView.image = NSImage(named: "freeapp1")
+        imageView.image = NSApplication.shared.applicationIconImage
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.widthAnchor.constraint(equalToConstant: 80).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
         return imageView
     }()
-    
     
     /// 主提示标签
     private let primaryLabel: NSTextField = {
@@ -134,7 +133,6 @@ public class SettingsLanguageController: NSViewController {
     /// 保存语言设置
     private func saveLanguage() {
         let language = LCLanguage.supportedLanguagesModel[index]
-        print("需要修改的语言代码：\(language.code)")
         UserDefaults.standard.set([language.code], forKey: "AppleLanguages")
     }
     
@@ -155,10 +153,8 @@ public class SettingsLanguageController: NSViewController {
     
     @objc private func cancel() {
         dismiss(self)
-        print("取消修改语言设置...")
-        
-        // 发送通知 - 取消了修改
-        NotificationCenter.default.post(name: .LanguageIsCancelChanged, object: nil)
+        // 发送 Combine 事件, 通知取消语言修改
+        LCLanguage.cancelPublisher.send()
     }
 }
 

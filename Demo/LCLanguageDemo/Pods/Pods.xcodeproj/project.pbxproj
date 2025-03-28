@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031BB3BB8EAF23CC44CFFF397263D3F1 /* Pods-LCLanguageDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11994A9558501E2244C39353BC54087B /* Pods-LCLanguageDemo-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		04C261E67CFC2BBF4EA9F1D11773509F /* LCLanguage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 049F97846F8C5B55DD3CA8654147B389 /* LCLanguage-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0A3E3CE6926D8E055C7BEC1A70ACB430 /* LCLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE4E54DF235999BEA04B91370659FD /* LCLanguage.swift */; };
+		39892928BFB10149AA26199DD8BE0166 /* Pods-LCLanguageDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CF9AFFCCB09262ECF20D5F52949 /* Pods-LCLanguageDemo-dummy.m */; };
+		41898564D39ED1FB5CDEE53D353B8A5F /* LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8BEEFB3D6EE353825FC7D8B2D504DC /* LocalizedStringKey.swift */; };
+		7917402D0574CF20B67DCA728212A815 /* SupportedLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB76FF8C4FC5928CF3835F8284D1259F /* SupportedLanguage.swift */; };
+		A6F65FFA72451EAB85D3A1E8644D9532 /* LCLanguage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E14A8CB1A61073E170BF0FAF28C8BA6C /* LCLanguage-dummy.m */; };
+		C37258A96C3E25D14EF235EC18170BE1 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6BB9C7AF7C595EE5983EE17C68A1D /* LanguageManager.swift */; };
+		CBE0F9BAF5AF162A6250A3C86EE5BB57 /* SupportedLanguageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9774402E616CDFCC16291B4A058B3 /* SupportedLanguageOption.swift */; };
+		DDE25BD7EC8968F0B6BB170CB42071EA /* SettingsLanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045777E6289B3D05E6EA82F52C58CA00 /* SettingsLanguageController.swift */; };
+		F0E5978033E1A1A6CED9D2251B97C9BB /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6F755EF80BFDBE80EF2F9234E824F /* UserDefaults+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1B3E02837F5997E690C22426E6C8360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD396CDB69205F57D29E7AE92793E4D5;
+			remoteInfo = LCLanguage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045777E6289B3D05E6EA82F52C58CA00 /* SettingsLanguageController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SettingsLanguageController.swift; path = Sources/LCLanguage/SettingsLanguageController.swift; sourceTree = "<group>"; };
+		049F97846F8C5B55DD3CA8654147B389 /* LCLanguage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCLanguage-umbrella.h"; sourceTree = "<group>"; };
+		0B4BA4181959388801D33F94F34767A8 /* Pods-LCLanguageDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LCLanguageDemo.modulemap"; sourceTree = "<group>"; };
+		0C797FE9F363B9CDD028B3F912761F6D /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = ko.lproj/LCLanguage.strings; sourceTree = "<group>"; };
+		0E5C5108887380B73C5401AB24AAD263 /* Pods-LCLanguageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCLanguageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		11994A9558501E2244C39353BC54087B /* Pods-LCLanguageDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LCLanguageDemo-umbrella.h"; sourceTree = "<group>"; };
+		130FC57763CEAEE14DCF033D7F1FEA6B /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = en.lproj/LCLanguage.strings; sourceTree = "<group>"; };
+		173B889B43555892E0F42845C71AA427 /* Pods-LCLanguageDemo */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-LCLanguageDemo"; path = "libPods-LCLanguageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C76408EECE2823FBBEC5960423D4F2 /* LCLanguage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LCLanguage.modulemap; sourceTree = "<group>"; };
+		3A545152E7D9B229A3FE8986690A12DF /* LCLanguage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCLanguage-prefix.pch"; sourceTree = "<group>"; };
+		3C8BEEFB3D6EE353825FC7D8B2D504DC /* LocalizedStringKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalizedStringKey.swift; path = Sources/LCLanguage/LocalizedStringKey.swift; sourceTree = "<group>"; };
+		4542158CB00C55009A5B8BB452148F55 /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = es.lproj/LCLanguage.strings; sourceTree = "<group>"; };
+		56FDA819C13977624AF580BDE3D2858F /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = "zh-Hans.lproj/LCLanguage.strings"; sourceTree = "<group>"; };
+		58861268883BB618E8E96F830A5F8502 /* Pods-LCLanguageDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCLanguageDemo-resources.sh"; sourceTree = "<group>"; };
+		5ADA22916C75AD6B42D762D104E517B0 /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = fr.lproj/LCLanguage.strings; sourceTree = "<group>"; };
+		66283ADB70B878F2025668BF0A7E916F /* LCLanguage */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = LCLanguage; path = libLCLanguage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFA1A748C2291060A6AFC74CDE2A2D3 /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = ru.lproj/LCLanguage.strings; sourceTree = "<group>"; };
+		81E9774402E616CDFCC16291B4A058B3 /* SupportedLanguageOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupportedLanguageOption.swift; path = Sources/LCLanguage/SupportedLanguageOption.swift; sourceTree = "<group>"; };
+		881D3EA8A30CCDA546080BF24E157085 /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = "zh-HK.lproj/LCLanguage.strings"; sourceTree = "<group>"; };
+		8D7E9D12004E4D1A465C0E0E3085421D /* Pods-LCLanguageDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LCLanguageDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		92D5E4C63A3A6240698B617754460819 /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = "pt-PT.lproj/LCLanguage.strings"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8FE4E54DF235999BEA04B91370659FD /* LCLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LCLanguage.swift; path = Sources/LCLanguage/LCLanguage.swift; sourceTree = "<group>"; };
+		AE15699554B8BDBE56DBF0AEA70CF921 /* LCLanguage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LCLanguage.debug.xcconfig; sourceTree = "<group>"; };
+		BB76FF8C4FC5928CF3835F8284D1259F /* SupportedLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupportedLanguage.swift; path = Sources/LCLanguage/SupportedLanguage.swift; sourceTree = "<group>"; };
+		C9DB9F6E96E29D9EE0D7B7DAD9836736 /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = de.lproj/LCLanguage.strings; sourceTree = "<group>"; };
+		CFA6F755EF80BFDBE80EF2F9234E824F /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UserDefaults+Extension.swift"; path = "Sources/LCLanguage/UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		D31D7FE2DF96DC017D7336AC8BB3D846 /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = it.lproj/LCLanguage.strings; sourceTree = "<group>"; };
+		D81255D262A6CB9C56A3C7FF1523DCB7 /* Pods-LCLanguageDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LCLanguageDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE4D8B79B3C3FA31D6324F23D57949EC /* LCLanguage.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = LCLanguage.strings; path = ja.lproj/LCLanguage.strings; sourceTree = "<group>"; };
+		E14A8CB1A61073E170BF0FAF28C8BA6C /* LCLanguage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LCLanguage-dummy.m"; sourceTree = "<group>"; };
+		E2F6BB9C7AF7C595EE5983EE17C68A1D /* LanguageManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageManager.swift; path = Sources/LCLanguage/LanguageManager.swift; sourceTree = "<group>"; };
+		E438969AFED2348D56B27D5B628EF926 /* LCLanguage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LCLanguage.release.xcconfig; sourceTree = "<group>"; };
+		EC82D54B23BB06DF5B0166FB72177337 /* Pods-LCLanguageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCLanguageDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FCF33CF9AFFCCB09262ECF20D5F52949 /* Pods-LCLanguageDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LCLanguageDemo-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51A2560F07C74D27A2C85348794C2136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F441E398689F217B0201B4995D6872C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36CA34CA02ADF54E3FA76C78214446CB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7193DCB5A06D20685989CF89A16325B4 /* Pods-LCLanguageDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6B439D036F43E48E66011F3BBAA627F0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				39C76408EECE2823FBBEC5960423D4F2 /* LCLanguage.modulemap */,
+				E14A8CB1A61073E170BF0FAF28C8BA6C /* LCLanguage-dummy.m */,
+				3A545152E7D9B229A3FE8986690A12DF /* LCLanguage-prefix.pch */,
+				049F97846F8C5B55DD3CA8654147B389 /* LCLanguage-umbrella.h */,
+				AE15699554B8BDBE56DBF0AEA70CF921 /* LCLanguage.debug.xcconfig */,
+				E438969AFED2348D56B27D5B628EF926 /* LCLanguage.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LCLanguage";
+			sourceTree = "<group>";
+		};
+		6D52AAA0AF778B00C41FC214BD57EB77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A078EE23BE5099BC91073A518F695DC /* LCLanguage.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7193DCB5A06D20685989CF89A16325B4 /* Pods-LCLanguageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0B4BA4181959388801D33F94F34767A8 /* Pods-LCLanguageDemo.modulemap */,
+				8D7E9D12004E4D1A465C0E0E3085421D /* Pods-LCLanguageDemo-acknowledgements.markdown */,
+				D81255D262A6CB9C56A3C7FF1523DCB7 /* Pods-LCLanguageDemo-acknowledgements.plist */,
+				FCF33CF9AFFCCB09262ECF20D5F52949 /* Pods-LCLanguageDemo-dummy.m */,
+				58861268883BB618E8E96F830A5F8502 /* Pods-LCLanguageDemo-resources.sh */,
+				11994A9558501E2244C39353BC54087B /* Pods-LCLanguageDemo-umbrella.h */,
+				EC82D54B23BB06DF5B0166FB72177337 /* Pods-LCLanguageDemo.debug.xcconfig */,
+				0E5C5108887380B73C5401AB24AAD263 /* Pods-LCLanguageDemo.release.xcconfig */,
+			);
+			name = "Pods-LCLanguageDemo";
+			path = "Target Support Files/Pods-LCLanguageDemo";
+			sourceTree = "<group>";
+		};
+		753FBC0E3D259C3D8ABC37365CF25D1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66283ADB70B878F2025668BF0A7E916F /* LCLanguage */,
+				173B889B43555892E0F42845C71AA427 /* Pods-LCLanguageDemo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C50E29EF1658937A13A383E073D4BA4C /* LCLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				E2F6BB9C7AF7C595EE5983EE17C68A1D /* LanguageManager.swift */,
+				A8FE4E54DF235999BEA04B91370659FD /* LCLanguage.swift */,
+				3C8BEEFB3D6EE353825FC7D8B2D504DC /* LocalizedStringKey.swift */,
+				045777E6289B3D05E6EA82F52C58CA00 /* SettingsLanguageController.swift */,
+				BB76FF8C4FC5928CF3835F8284D1259F /* SupportedLanguage.swift */,
+				81E9774402E616CDFCC16291B4A058B3 /* SupportedLanguageOption.swift */,
+				CFA6F755EF80BFDBE80EF2F9234E824F /* UserDefaults+Extension.swift */,
+				6D52AAA0AF778B00C41FC214BD57EB77 /* Resources */,
+				6B439D036F43E48E66011F3BBAA627F0 /* Support Files */,
+			);
+			name = LCLanguage;
+			path = LCLanguage;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				FBB323A7FB32C9E8F634D0F43D180879 /* Pods */,
+				753FBC0E3D259C3D8ABC37365CF25D1F /* Products */,
+				36CA34CA02ADF54E3FA76C78214446CB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBB323A7FB32C9E8F634D0F43D180879 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C50E29EF1658937A13A383E073D4BA4C /* LCLanguage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6B1C11936972CE494546BB7D1082A1B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031BB3BB8EAF23CC44CFFF397263D3F1 /* Pods-LCLanguageDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B75D9C13A452D94A1E5A8ADA6C3C84C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C261E67CFC2BBF4EA9F1D11773509F /* LCLanguage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AD396CDB69205F57D29E7AE92793E4D5 /* LCLanguage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AD26C7B76378526AE8008686D848AD6 /* Build configuration list for PBXNativeTarget "LCLanguage" */;
+			buildPhases = (
+				9B75D9C13A452D94A1E5A8ADA6C3C84C /* Headers */,
+				7CB5817698DBFB5AED9866D6F8DCD511 /* Sources */,
+				51A2560F07C74D27A2C85348794C2136 /* Frameworks */,
+				D4DA03083D5DB74FAC802D3980D5A581 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LCLanguage;
+			productName = LCLanguage;
+			productReference = 66283ADB70B878F2025668BF0A7E916F /* LCLanguage */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2E2C9360AEB7E358AD0A392E392E652 /* Pods-LCLanguageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314982A4096DB658164154BB108183A5 /* Build configuration list for PBXNativeTarget "Pods-LCLanguageDemo" */;
+			buildPhases = (
+				6B1C11936972CE494546BB7D1082A1B6 /* Headers */,
+				E23BF4869E639A172C7F13C5CDEBD2D8 /* Sources */,
+				F441E398689F217B0201B4995D6872C0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5C50E2D4DEAC8101E5033A717E755AC /* PBXTargetDependency */,
+			);
+			name = "Pods-LCLanguageDemo";
+			productName = "Pods-LCLanguageDemo";
+			productReference = 173B889B43555892E0F42845C71AA427 /* Pods-LCLanguageDemo */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+				es,
+				fr,
+				it,
+				ja,
+				ko,
+				"pt-PT",
+				ru,
+				"zh-HK",
+				"zh-Hans",
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 753FBC0E3D259C3D8ABC37365CF25D1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD396CDB69205F57D29E7AE92793E4D5 /* LCLanguage */,
+				D2E2C9360AEB7E358AD0A392E392E652 /* Pods-LCLanguageDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4DA03083D5DB74FAC802D3980D5A581 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/LCLanguage/LCLanguage.modulemap",
+				"${PODS_ROOT}/Headers/Public/LCLanguage/LCLanguage-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/LCLanguage-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/LCLanguage/LCLanguage.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/LCLanguage/LCLanguage-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CB5817698DBFB5AED9866D6F8DCD511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37258A96C3E25D14EF235EC18170BE1 /* LanguageManager.swift in Sources */,
+				0A3E3CE6926D8E055C7BEC1A70ACB430 /* LCLanguage.swift in Sources */,
+				A6F65FFA72451EAB85D3A1E8644D9532 /* LCLanguage-dummy.m in Sources */,
+				41898564D39ED1FB5CDEE53D353B8A5F /* LocalizedStringKey.swift in Sources */,
+				DDE25BD7EC8968F0B6BB170CB42071EA /* SettingsLanguageController.swift in Sources */,
+				7917402D0574CF20B67DCA728212A815 /* SupportedLanguage.swift in Sources */,
+				CBE0F9BAF5AF162A6250A3C86EE5BB57 /* SupportedLanguageOption.swift in Sources */,
+				F0E5978033E1A1A6CED9D2251B97C9BB /* UserDefaults+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23BF4869E639A172C7F13C5CDEBD2D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39892928BFB10149AA26199DD8BE0166 /* Pods-LCLanguageDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5C50E2D4DEAC8101E5033A717E755AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LCLanguage;
+			target = AD396CDB69205F57D29E7AE92793E4D5 /* LCLanguage */;
+			targetProxy = F1B3E02837F5997E690C22426E6C8360 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A078EE23BE5099BC91073A518F695DC /* LCLanguage.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DB9F6E96E29D9EE0D7B7DAD9836736 /* LCLanguage.strings */,
+				130FC57763CEAEE14DCF033D7F1FEA6B /* LCLanguage.strings */,
+				4542158CB00C55009A5B8BB452148F55 /* LCLanguage.strings */,
+				5ADA22916C75AD6B42D762D104E517B0 /* LCLanguage.strings */,
+				D31D7FE2DF96DC017D7336AC8BB3D846 /* LCLanguage.strings */,
+				DE4D8B79B3C3FA31D6324F23D57949EC /* LCLanguage.strings */,
+				0C797FE9F363B9CDD028B3F912761F6D /* LCLanguage.strings */,
+				92D5E4C63A3A6240698B617754460819 /* LCLanguage.strings */,
+				6AFA1A748C2291060A6AFC74CDE2A2D3 /* LCLanguage.strings */,
+				56FDA819C13977624AF580BDE3D2858F /* LCLanguage.strings */,
+				881D3EA8A30CCDA546080BF24E157085 /* LCLanguage.strings */,
+			);
+			name = LCLanguage.strings;
+			path = Sources/LCLanguage/Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AE172D8F2A4843BFACAD21A0ED26541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		307FE9550EA33F55FC53BBEF99322553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E438969AFED2348D56B27D5B628EF926 /* LCLanguage.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/LCLanguage/LCLanguage-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = Headers/Public/LCLanguage/LCLanguage.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LCLanguage;
+				PRODUCT_NAME = LCLanguage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		808E544862838153672EA12FCC127D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8982B937483E6003B32B34F8E5212B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE15699554B8BDBE56DBF0AEA70CF921 /* LCLanguage.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/LCLanguage/LCLanguage-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = Headers/Public/LCLanguage/LCLanguage.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LCLanguage;
+				PRODUCT_NAME = LCLanguage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BB39B247E61EE186C07D5280A54FD7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC82D54B23BB06DF5B0166FB72177337 /* Pods-LCLanguageDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-LCLanguageDemo/Pods-LCLanguageDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D4606A1B9D8F18EBDBBA87B7CA7D5AE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5C5108887380B73C5401AB24AAD263 /* Pods-LCLanguageDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-LCLanguageDemo/Pods-LCLanguageDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		314982A4096DB658164154BB108183A5 /* Build configuration list for PBXNativeTarget "Pods-LCLanguageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB39B247E61EE186C07D5280A54FD7A6 /* Debug */,
+				D4606A1B9D8F18EBDBBA87B7CA7D5AE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808E544862838153672EA12FCC127D9A /* Debug */,
+				0AE172D8F2A4843BFACAD21A0ED26541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AD26C7B76378526AE8008686D848AD6 /* Build configuration list for PBXNativeTarget "LCLanguage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8982B937483E6003B32B34F8E5212B25 /* Debug */,
+				307FE9550EA33F55FC53BBEF99322553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

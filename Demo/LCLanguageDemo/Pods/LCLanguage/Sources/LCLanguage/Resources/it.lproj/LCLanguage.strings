@@ -1,0 +1,10 @@
+//
+//  LCLanguage.strings
+//
+//  Created by DevLiuSir on 2023/3/2.
+//
+
+"button_cancel.title" = "Annulla";
+"label_language_change.messageText" = "La lingua principale della tua app è stata cambiata. Vuoi riavviare l'app immediatamente?";
+"label_language_change.informativeText" = "L'app potrebbe dover essere riavviata per utilizzare la nuova lingua.";
+"button_restart.title" = "Riavvia subito";

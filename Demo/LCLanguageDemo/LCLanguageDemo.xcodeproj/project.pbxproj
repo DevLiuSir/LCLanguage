@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,38 +11,19 @@
 		6BCBAF8A2D754F9900A47BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAF872D754F9900A47BBF /* ViewController.swift */; };
 		6BCBAF8B2D754F9900A47BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBAF832D754F9900A47BBF /* Assets.xcassets */; };
 		6BCBAF8C2D754F9900A47BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBAF862D754F9900A47BBF /* Main.storyboard */; };
-		6BCBAF9F2D754FFC00A47BBF /* SupportedLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAF9C2D754FFC00A47BBF /* SupportedLanguage.swift */; };
-		6BCBAFA02D754FFC00A47BBF /* SettingsLanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAF9B2D754FFC00A47BBF /* SettingsLanguageController.swift */; };
-		6BCBAFA12D754FFC00A47BBF /* LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAF992D754FFC00A47BBF /* LocalizedStringKey.swift */; };
-		6BCBAFA22D754FFC00A47BBF /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAF9A2D754FFC00A47BBF /* Notification+Extension.swift */; };
-		6BCBAFA32D754FFC00A47BBF /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAF9D2D754FFC00A47BBF /* UserDefaults+Extension.swift */; };
-		6BCBAFA42D754FFC00A47BBF /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAF972D754FFC00A47BBF /* LanguageManager.swift */; };
-		6BCBAFA52D754FFC00A47BBF /* LCLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAF982D754FFC00A47BBF /* LCLanguage.swift */; };
-		6BCBAFA62D754FFC00A47BBF /* LCLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBAF952D754FFC00A47BBF /* LCLanguage.strings */; };
+		7A01BAAF821640F5AF6218F0 /* libPods-LCLanguageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 160592336B8A6C7BE594A986 /* libPods-LCLanguageDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160592336B8A6C7BE594A986 /* libPods-LCLanguageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LCLanguageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EE628C9EC56EFB716667FB3 /* Pods-LCLanguageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCLanguageDemo.release.xcconfig"; path = "Target Support Files/Pods-LCLanguageDemo/Pods-LCLanguageDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6BCBAF702D754F6D00A47BBF /* LCLanguageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCLanguageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCBAF822D754F9900A47BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BCBAF832D754F9900A47BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BCBAF842D754F9900A47BBF /* LCLanguageDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LCLanguageDemo.entitlements; sourceTree = "<group>"; };
 		6BCBAF852D754F9900A47BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BCBAF872D754F9900A47BBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6BCBAF8D2D754FFC00A47BBF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LCLanguage.strings; sourceTree = "<group>"; };
-		6BCBAF8E2D754FFC00A47BBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LCLanguage.strings; sourceTree = "<group>"; };
-		6BCBAF8F2D754FFC00A47BBF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LCLanguage.strings; sourceTree = "<group>"; };
-		6BCBAF902D754FFC00A47BBF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LCLanguage.strings; sourceTree = "<group>"; };
-		6BCBAF912D754FFC00A47BBF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LCLanguage.strings; sourceTree = "<group>"; };
-		6BCBAF922D754FFC00A47BBF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LCLanguage.strings; sourceTree = "<group>"; };
-		6BCBAF932D754FFC00A47BBF /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LCLanguage.strings"; sourceTree = "<group>"; };
-		6BCBAF942D754FFC00A47BBF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LCLanguage.strings"; sourceTree = "<group>"; };
-		6BCBAF972D754FFC00A47BBF /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
-		6BCBAF982D754FFC00A47BBF /* LCLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCLanguage.swift; sourceTree = "<group>"; };
-		6BCBAF992D754FFC00A47BBF /* LocalizedStringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringKey.swift; sourceTree = "<group>"; };
-		6BCBAF9A2D754FFC00A47BBF /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
-		6BCBAF9B2D754FFC00A47BBF /* SettingsLanguageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLanguageController.swift; sourceTree = "<group>"; };
-		6BCBAF9C2D754FFC00A47BBF /* SupportedLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedLanguage.swift; sourceTree = "<group>"; };
-		6BCBAF9D2D754FFC00A47BBF /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		E8723A4F5D0543C4C9C6E080 /* Pods-LCLanguageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCLanguageDemo.debug.xcconfig"; path = "Target Support Files/Pods-LCLanguageDemo/Pods-LCLanguageDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A01BAAF821640F5AF6218F0 /* libPods-LCLanguageDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +43,8 @@
 			children = (
 				6BCBAF882D754F9900A47BBF /* LCLanguageDemo */,
 				6BCBAF712D754F6D00A47BBF /* Products */,
+				ECC9F92E1B5800CAE0066EB6 /* Pods */,
+				73DDA1E822573EA1B84BA5E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,32 +64,25 @@
 				6BCBAF842D754F9900A47BBF /* LCLanguageDemo.entitlements */,
 				6BCBAF862D754F9900A47BBF /* Main.storyboard */,
 				6BCBAF872D754F9900A47BBF /* ViewController.swift */,
-				6BCBAF9E2D754FFC00A47BBF /* LCLanguage */,
 			);
 			path = LCLanguageDemo;
 			sourceTree = "<group>";
 		};
-		6BCBAF962D754FFC00A47BBF /* Resources */ = {
+		73DDA1E822573EA1B84BA5E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6BCBAF952D754FFC00A47BBF /* LCLanguage.strings */,
+				160592336B8A6C7BE594A986 /* libPods-LCLanguageDemo.a */,
 			);
-			path = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6BCBAF9E2D754FFC00A47BBF /* LCLanguage */ = {
+		ECC9F92E1B5800CAE0066EB6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6BCBAF962D754FFC00A47BBF /* Resources */,
-				6BCBAF972D754FFC00A47BBF /* LanguageManager.swift */,
-				6BCBAF982D754FFC00A47BBF /* LCLanguage.swift */,
-				6BCBAF992D754FFC00A47BBF /* LocalizedStringKey.swift */,
-				6BCBAF9A2D754FFC00A47BBF /* Notification+Extension.swift */,
-				6BCBAF9B2D754FFC00A47BBF /* SettingsLanguageController.swift */,
-				6BCBAF9C2D754FFC00A47BBF /* SupportedLanguage.swift */,
-				6BCBAF9D2D754FFC00A47BBF /* UserDefaults+Extension.swift */,
+				E8723A4F5D0543C4C9C6E080 /* Pods-LCLanguageDemo.debug.xcconfig */,
+				2EE628C9EC56EFB716667FB3 /* Pods-LCLanguageDemo.release.xcconfig */,
 			);
-			path = LCLanguage;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,17 +92,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BCBAF7F2D754F6F00A47BBF /* Build configuration list for PBXNativeTarget "LCLanguageDemo" */;
 			buildPhases = (
+				4F037C1A1B6BFD9E7178A9BB /* [CP] Check Pods Manifest.lock */,
 				6BCBAF6C2D754F6D00A47BBF /* Sources */,
 				6BCBAF6D2D754F6D00A47BBF /* Frameworks */,
 				6BCBAF6E2D754F6D00A47BBF /* Resources */,
+				50B327D95B00C726EEF4C21E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LCLanguageDemo;
-			packageProductDependencies = (
-			);
 			productName = LCLanguageDemo;
 			productReference = 6BCBAF702D754F6D00A47BBF /* LCLanguageDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -146,6 +123,7 @@
 				};
 			};
 			buildConfigurationList = 6BCBAF6B2D754F6D00A47BBF /* Build configuration list for PBXProject "LCLanguageDemo" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -160,8 +138,6 @@
 				"pt-PT",
 			);
 			mainGroup = 6BCBAF672D754F6D00A47BBF;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 6BCBAF712D754F6D00A47BBF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,11 +154,52 @@
 			files = (
 				6BCBAF8B2D754F9900A47BBF /* Assets.xcassets in Resources */,
 				6BCBAF8C2D754F9900A47BBF /* Main.storyboard in Resources */,
-				6BCBAFA62D754FFC00A47BBF /* LCLanguage.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F037C1A1B6BFD9E7178A9BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LCLanguageDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50B327D95B00C726EEF4C21E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LCLanguageDemo/Pods-LCLanguageDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LCLanguageDemo/Pods-LCLanguageDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LCLanguageDemo/Pods-LCLanguageDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6BCBAF6C2D754F6D00A47BBF /* Sources */ = {
@@ -190,13 +207,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BCBAF892D754F9900A47BBF /* AppDelegate.swift in Sources */,
-				6BCBAF9F2D754FFC00A47BBF /* SupportedLanguage.swift in Sources */,
-				6BCBAFA02D754FFC00A47BBF /* SettingsLanguageController.swift in Sources */,
-				6BCBAFA12D754FFC00A47BBF /* LocalizedStringKey.swift in Sources */,
-				6BCBAFA22D754FFC00A47BBF /* Notification+Extension.swift in Sources */,
-				6BCBAFA32D754FFC00A47BBF /* UserDefaults+Extension.swift in Sources */,
-				6BCBAFA42D754FFC00A47BBF /* LanguageManager.swift in Sources */,
-				6BCBAFA52D754FFC00A47BBF /* LCLanguage.swift in Sources */,
 				6BCBAF8A2D754F9900A47BBF /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,21 +220,6 @@
 				6BCBAF852D754F9900A47BBF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6BCBAF952D754FFC00A47BBF /* LCLanguage.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6BCBAF8D2D754FFC00A47BBF /* de */,
-				6BCBAF8E2D754FFC00A47BBF /* en */,
-				6BCBAF8F2D754FFC00A47BBF /* es */,
-				6BCBAF902D754FFC00A47BBF /* fr */,
-				6BCBAF912D754FFC00A47BBF /* ja */,
-				6BCBAF922D754FFC00A47BBF /* ko */,
-				6BCBAF932D754FFC00A47BBF /* pt-PT */,
-				6BCBAF942D754FFC00A47BBF /* zh-Hans */,
-			);
-			name = LCLanguage.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -350,6 +345,7 @@
 		};
 		6BCBAF802D754F6F00A47BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8723A4F5D0543C4C9C6E080 /* Pods-LCLanguageDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -359,6 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QTU7D3WQQ9;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -377,6 +374,7 @@
 		};
 		6BCBAF812D754F6F00A47BBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE628C9EC56EFB716667FB3 /* Pods-LCLanguageDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +384,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QTU7D3WQQ9;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;

@@ -1,0 +1,6 @@
+module LCLanguage {
+  umbrella header "LCLanguage-umbrella.h"
+
+  export *
+  module * { export * }
+}

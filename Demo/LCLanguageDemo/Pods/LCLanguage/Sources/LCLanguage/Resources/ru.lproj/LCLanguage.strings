@@ -1,0 +1,10 @@
+//
+//  LCLanguage.strings
+//
+//  Created by DevLiuSir on 2023/3/2.
+//
+
+"button_cancel.title" = "Отмена";
+"label_language_change.messageText" = "Язык приложения изменён. Перезапустить приложение?";
+"label_language_change.informativeText" = "Приложение может потребовать перезапуска для применения нового языка.";
+"button_restart.title" = "Перезапустить";
