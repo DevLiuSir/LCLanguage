@@ -38,7 +38,7 @@
 
 
 ## 用法
-<img src="./Design/LCLanguage_english.png">
+<img src="./Design/LCLanguage_chinese.png">
 
 
 
