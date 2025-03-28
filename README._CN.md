@@ -1,4 +1,5 @@
-<p align="center"> <b>LCLanguage is a lightweight Cocoa framework for macOS that provides a dropdown menu for users to easily switch the app’s language settings. It allows developers to configure multiple language options and seamlessly update the app’s language environment.</b></p>
+
+<p align="center"> <b>LCLanguage 是一个轻量级的 Cocoa 框架，专为 macOS 应用提供语言环境切换功能。它通过下拉菜单让用户轻松选择应用语言，支持自定义多种语言选项，并实现无缝切换。</b></p>
 
 <p align="center">
 <img src="https://badgen.net/badge/icon/apple?icon=apple&label">
@@ -23,28 +24,28 @@
 
 
 
-## Preview
+## 预览
 
-| **Preview 1** | **Preview 2** |
+| **预览 1** | **预览 2** |
 |:---|:--- |
 | <img align="center" src="Design/Usage/01.png" width=400> |<img align="center" src="Design/Usage/02.png" width=400> |
 
 
-| **Preview 4** | **Preview 5** |
+| **预览 4** | **预览 5** |
 |:---|:--- |
 | <img align="center" src="Design/Usage/03.png" width=400> |<img align="center" src="Design/Usage/04.png" width=400> |
 
 
 
-## Usage
+## 用法
 <img src="./Design/LCLanguage_english.png">
 
 
 
-## Installation
+## 安装方式
 
 ### CocoaPods
-LCLanguage is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+LCLanguage 可通过 [CocoaPods](https://cocoapods.org) 获取。要安装它，只需将以下行添加到您的 Podfile 中：
 
 
 ```swift
@@ -54,18 +55,18 @@ pod 'LCLanguage'
 
 
 ### SwiftPackage
+添加 `https://github.com/DevLiuSir/LCLanguage.git `  [Xcode 中的“Swift Package Manager”选项卡](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
 
-Add `https://github.com/DevLiuSir/LCLanguage.git` in the [“Swift Package Manager” tab in Xcode](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
 
 
-## License
+## 许可证
 
 MIT License
 
 Copyright (c) 2024 Marvin
 
 
-## Author
+## 作者
 
 | [<img src="https://avatars2.githubusercontent.com/u/11488337?s=460&v=4" width="120px;"/>](https://github.com/DevLiuSir)  |  [DevLiuSir](https://github.com/DevLiuSir)<br/><br/><sub>Software Engineer</sub><br/> [<img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" height="20" width="20"/>][1] [<img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" height="20" width="20"/>][2] [<img align="center" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" height="20" width="20"/>][3]|
 | :------------: | :------------: |
