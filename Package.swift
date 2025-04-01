@@ -19,17 +19,7 @@ let package = Package(
         .target(
             name: "LCLanguage",
             resources: [
-                .process("Sources/LCLanguage/Resources/de.lproj/LCLanguage.strings"),
-                .process("Sources/LCLanguage/Resources/en.lproj/LCLanguage.strings"),
-                .process("Sources/LCLanguage/Resources/es.lproj/LCLanguage.strings"),
-                .process("Sources/LCLanguage/Resources/fr.lproj/LCLanguage.strings"),
-                .process("Sources/LCLanguage/Resources/it.lproj/LCLanguage.strings"),
-                .process("Sources/LCLanguage/Resources/ja.lproj/LCLanguage.strings"),
-                .process("Sources/LCLanguage/Resources/ko.lproj/LCLanguage.strings"),
-                .process("Sources/LCLanguage/Resources/pt-PT.lproj/LCLanguage.strings"),
-                .process("Sources/LCLanguage/Resources/ru.lproj/LCLanguage.strings"),
-                .process("Sources/LCLanguage/Resources/zh-HK.lproj/LCLanguage.strings"),
-                .process("Sources/LCLanguage/Resources/zh-Hans.lproj/LCLanguage.strings")
+                .process("Resources") // 添加资源路径
             ]),
         .testTarget(
             name: "LCLanguageTests",
