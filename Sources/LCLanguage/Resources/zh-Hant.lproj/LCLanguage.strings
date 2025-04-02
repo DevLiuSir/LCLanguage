@@ -6,5 +6,5 @@
 
 "button_cancel.title" = "取消";
 "label_language_change.messageText" = "您的應用主要語言已更改。您想要立即重新啟動應用嗎？";
-"label_language_change.informativeText" = "應用程式可能要在重啟應用之後才能使用新語言。";
+"label_language_change.informativeText" = "應用程式可能要在重新啟動後才能使用新語言。";
 "button_restart.title" = "立即重新啟動";
