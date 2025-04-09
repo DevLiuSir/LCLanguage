@@ -8,18 +8,13 @@ import Foundation
 import Combine
 
 public func localizeString(_ key: String) -> String {
-    #if SWIFT_PACKAGE
+#if SWIFT_PACKAGE
     // 如果是通过 Swift Package Manager 使用
     return Bundle.module.localizedString(forKey: key, value: "", table: "LCLanguage")
-    #else
+#else
     // 如果是通过 CocoaPods 使用
-    struct StaticBundle {
-        static let bundle: Bundle = {
-            return Bundle(for: LCLanguage.self)
-        }()
-    }
-    return StaticBundle.bundle.localizedString(forKey: key, value: "", table: "LCLanguage")
-    #endif
+    return Bundle(for: LCLanguage.self).localizedString(forKey: key, value: "", table: "LCLanguage")
+#endif
 }
 
 
