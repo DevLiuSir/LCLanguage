@@ -8,13 +8,18 @@ import Foundation
 import Combine
 
 public func localizeString(_ key: String) -> String {
-#if SWIFT_PACKAGE
+    #if SWIFT_PACKAGE
     // 如果是通过 Swift Package Manager 使用
     return Bundle.module.localizedString(forKey: key, value: "", table: "LCLanguage")
-#else
+    #else
     // 如果是通过 CocoaPods 使用
-    return Bundle(for: LCLanguage.self).localizedString(forKey: key, value: "", table: "LCLanguage")
-#endif
+    struct StaticBundle {
+        static let bundle: Bundle = {
+            return Bundle(for: LCLanguage.self)
+        }()
+    }
+    return StaticBundle.bundle.localizedString(forKey: key, value: "", table: "LCLanguage")
+    #endif
 }
 
 
@@ -30,6 +35,10 @@ public class LCLanguage {
     
     //MARK: - Public
     
+    /// 是否显示国旗 Emoji（全局控制）
+    public static var showFlagEmoji: Bool = true
+    
+    
     // 视图模型，支持的语言列表
     public static var supportedLanguagesModel: [Language] = []
     
@@ -39,7 +48,7 @@ public class LCLanguage {
     }
     
     /// 1.获取系统当前语言 【English、简体中文 ...】
-    public static let currentLanguageName = SupportedLanguages.getLangName(code: currentLang)
+    public static let currentLanguageName = SupportedLanguages.getLangName(code: currentLang, showEmoji: showFlagEmoji)
     
     /// 发布者，通知取消语言修改
     public static let cancelPublisher = PassthroughSubject<Void, Never>()

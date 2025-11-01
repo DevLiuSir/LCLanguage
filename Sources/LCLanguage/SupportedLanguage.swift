@@ -10,6 +10,33 @@ import Foundation
 public struct Language: Hashable {
     public let name: String    // 名称
     public let code: String    // code代码
+    
+    /// 对应语言的国旗 Emoji
+    public var flagEmoji: String {
+        switch code {
+        case "zh-Hans": return "🇨🇳" // 简体中文
+        case "zh-Hant": return "🇭🇰" // 繁体中文
+        case "en": return "🇬🇧"      // 英语
+        case "ja": return "🇯🇵"      // 日语
+        case "ko": return "🇰🇷"      // 韩语
+        case "fr": return "🇫🇷"      // 法语
+        case "es": return "🇪🇸"      // 西班牙语
+        case "de": return "🇩🇪"      // 德语
+        case "pt": return "🇵🇹"      // 葡萄牙语
+        case "ru": return "🇷🇺"      // 俄语
+        case "uk": return "🇺🇦"      // 乌克兰语
+        case "hr": return "🇭🇷"      // 克罗地亚语
+        case "tr": return "🇹🇷"      // 土耳其语
+        case "pl": return "🇵🇱"      // 波兰语
+        case "fil": return "🇵🇭"     // 菲律宾语
+        case "nl": return "🇳🇱"      // 荷兰语
+        case "it": return "🇮🇹"      // 意大利语
+        case "so": return "🇸🇴"      // 索马里语
+        case "sk": return "🇸🇰"      // 斯洛伐克语
+        default: return "🌐"
+        }
+    }
+    
 }
 
 
@@ -63,6 +90,20 @@ public struct SupportedLanguages {
         let lang = SupportedLanguages.langList.filter { $0.code == code }.first
         return lang?.name ?? "English"
     }
+    
+    /// 根据语言 code 获取语言名称
+    /// - Parameters:
+    ///   - code: 语言代码，例如 "zh-Hans", "en"
+    ///   - showEmoji: 是否在返回的语言名称前加上对应的国旗 Emoji，默认 false
+    /// - Returns: 对应语言的名称，如果找不到则返回 "English"
+    internal static func getLangName(code: String, showEmoji: Bool = false) -> String {
+        guard let lang = langList.first(where: { $0.code == code }) else {
+            return "English"    // 如果找不到对应语言，默认返回 English
+        }
+        // 根据 showEmoji 参数返回带或不带 Emoji 的语言名称
+        return showEmoji ? "\(lang.flagEmoji) \(lang.name)" : lang.name
+    }
+    
     
     /// 获取语言code
     /// - Parameter code: 根据传入的code
