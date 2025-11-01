@@ -34,7 +34,7 @@ extension ViewController {
     /// 获取所有支持的语言
     private func getAllSupportedLanguages() {
         // 0.配置是否显示语言 emoji
-        LCLanguage.showFlagEmoji = false
+        LCLanguage.showFlagEmoji = true
         
         // 1.配置需要支持的多种语言
         LCLanguage.configureSupportedLanguages(using: [
