@@ -5,7 +5,7 @@
 //
 
 import Cocoa
-import LCLanguage
+
 
 class ViewController: NSViewController {
     
@@ -33,29 +33,34 @@ extension ViewController {
   
     /// 获取所有支持的语言
     private func getAllSupportedLanguages() {
-        // 0.配置需要支持的多种语言
+        // 0.配置是否显示语言 emoji
+        LCLanguage.showFlagEmoji = false
+        
+        // 1.配置需要支持的多种语言
         LCLanguage.configureSupportedLanguages(using: [
             .english, .simplifiedChinese, .traditionalChinese,
             .japanese, .korean, .french, .spanish, .german, .portuguese
             // ... 这里添加想要的更多语言
         ])
         
-        // 1.遍历所有支持语言的数组。添加到 NSPopUpButton 下拉列表中
+        // 2.遍历所有支持语言的数组。添加到 NSPopUpButton 下拉列表中
         LCLanguage.supportedLanguagesModel.forEach { lang in
-            print("所有支持的语言：\(lang.name)")
-            selectLanguageEnvironmentPopUpBtn.addItems(withTitles: [lang.name])
+            // 根据全局开关决定是否显示 emoji
+            let title = LCLanguage.showFlagEmoji ? "\(lang.flagEmoji) \(lang.name)" : lang.name
+            selectLanguageEnvironmentPopUpBtn.addItem(withTitle: title)
         }
         
-        // 2.设置 下拉列表 默认选择项 为 当前语言
+        // 3.设置 下拉列表 默认选择项 为 当前语言
         setCurrentLanguage()
         
-        // 3.监听取消修改语言
-        LCLanguage.observeLanguageCancel { shouldReset in
+        // 4.监听取消修改语言
+        LCLanguage.observeLanguageCancel { [weak self] shouldReset in
+            guard let self = self else { return } // 避免 self 已经被释放
             guard shouldReset else {
                 print("取消修改语言，但未重置语言选择")
                 return
             }
-            // 4.取消修改语言，还原之前的当前语言选择项
+            // 5.取消修改语言，还原之前的当前语言选择项
             self.setCurrentLanguage()
         }
     }
