@@ -8,6 +8,21 @@ import Foundation
 import Cocoa
 
 
+
+
+public func localizeString(_ key: String) -> String {
+#if SWIFT_PACKAGE
+    // 如果是通过 Swift Package Manager 使用
+    return Bundle.module.localizedString(forKey: key, value: "", table: "LCLanguage")
+#else
+    // 使用指定的键从bundle中获取本地化字符串
+    return Bundle(for: LCLanguage.self).localizedString(forKey: key, value: "", table: "LCLanguage")
+#endif
+}
+
+
+
+
 /// 设置语言控制器
 public class SettingsLanguageController: NSViewController {
     
@@ -148,13 +163,19 @@ public class SettingsLanguageController: NSViewController {
     // MARK: - 按钮操作
     @objc private func restartApp() {
         saveLanguage()
-        relaunchApp()
+        // 判断是否外部控制重启
+        if LCLanguage.shouldExternalRestartControl {
+            // 发送 Combine 事件，通知语言动作为取消
+            LCLanguage.actionPublisher.send(.restart)
+        }else {
+            relaunchApp()
+        }
     }
     
     @objc private func cancel() {
         dismiss(self)
-        // 发送 Combine 事件, 通知取消语言修改
-        LCLanguage.cancelPublisher.send()
+        // 发送 Combine 事件，通知语言动作为取消
+        LCLanguage.actionPublisher.send(.cancel)
     }
 }
 
