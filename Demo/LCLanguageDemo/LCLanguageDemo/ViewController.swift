@@ -2,6 +2,7 @@
 //  ViewController.swift
 //  LCLanguageDemo
 //
+//  Created by DevLiuSir on 2023/3/2.
 //
 
 import Cocoa
@@ -36,7 +37,7 @@ extension ViewController {
         // 0.配置是否显示语言 emoji
         LCLanguage.showFlagEmoji = true
         
-        // 1.0.配置外面重置重启，由于多个子程序
+        // 1.0.配置是否外面控制重启，适配多个子程序的情况
         LCLanguage.shouldExternalRestartControl = false
         
         // 1.1.配置需要支持的多种语言
@@ -102,7 +103,6 @@ extension ViewController {
         
         // 判断 下拉列表当前选择项，与当前app语言环境是否一致
         if !title.contains(LCLanguage.currentLanguageName) {   // 不一致，更改语言
-            print("更换语言。")
             // 创建语言设置控制器
             let languageVC = SettingsLanguageController()
             // 传值 《当前选择的index》 设置语言控制器

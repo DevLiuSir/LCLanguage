@@ -2,6 +2,7 @@
 //  AppDelegate.swift
 //  LCLanguageDemo
 //
+//  Created by DevLiuSir on 2023/3/2.
 //
 
 import Cocoa
