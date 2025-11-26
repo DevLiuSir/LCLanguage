@@ -36,7 +36,10 @@ extension ViewController {
         // 0.配置是否显示语言 emoji
         LCLanguage.showFlagEmoji = true
         
-        // 1.配置需要支持的多种语言
+        // 1.0.配置外面重置重启，由于多个子程序
+        LCLanguage.shouldExternalRestartControl = false
+        
+        // 1.1.配置需要支持的多种语言
         LCLanguage.configureSupportedLanguages(using: [
             .english, .simplifiedChinese, .traditionalChinese,
             .japanese, .korean, .french, .spanish, .german, .portuguese
@@ -53,15 +56,19 @@ extension ViewController {
         // 3.设置 下拉列表 默认选择项 为 当前语言
         setCurrentLanguage()
         
-        // 4.监听取消修改语言
-        LCLanguage.observeLanguageCancel { [weak self] shouldReset in
+        // 4.监听语言动作事件（取消 / 重启）
+        LCLanguage.observeLanguageAction { [weak self] action in
             guard let self = self else { return } // 避免 self 已经被释放
-            guard shouldReset else {
-                print("取消修改语言，但未重置语言选择")
-                return
+            switch action {
+            case .cancel:
+                print("取消修改语言")
+                // 5.取消修改语言，还原之前的当前语言选择项
+                self.setCurrentLanguage()
+            case .restart:
+                print("确认修改语言并重启, 通知其他程序语言已经修改")
+                // 这里可以处理重启相关逻辑，如果需要的话
+                break
             }
-            // 5.取消修改语言，还原之前的当前语言选择项
-            self.setCurrentLanguage()
         }
     }
     
