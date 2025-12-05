@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "LCLanguage"
 
-  spec.version      = "1.0.7"
+  spec.version      = "1.0.8"
   
   spec.summary      = "LCLanguage is a Cocoa framework for quickly switching application languages!"
   
